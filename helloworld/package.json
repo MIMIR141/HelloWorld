@@ -1,0 +1,43 @@
+{
+  "name": "helloworld",
+  "displayName": "My Markdown Extension",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "markdown.previewStyles": [
+      "./styles/github-style.css"
+    ],
+    "markdown.markdownItPlugins": true,
+    "markdown.previewScripts": [
+      "./scripts/preview.js"
+    ]
+  },
+  "dependencies": {
+    "markdown-it-container": "^3.0.0",
+    "markdown-it-emoji": "^2.0.2"
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}

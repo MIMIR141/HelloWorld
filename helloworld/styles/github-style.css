@@ -1,0 +1,90 @@
+/*1.Стиль ГХ*/
+body {
+  background-color: #f6f8fa;
+  color: #24292e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  color: #0366d6;
+  border-bottom: 2px solid #eaecef;
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+blockquote {
+  border-left: 4px solid #dfe2e5;
+  padding: 0 1em;
+  color: #6a737d;
+  margin-left: 0;
+  background-color: #ffffff;
+}
+
+pre {
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  border: 1px solid #d0d7de;
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+pre:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  border-color: #0366d6;
+}
+
+/*2.Кастомыне стили*/
+.alert {
+  background-color: #fff8c5;
+  border-left: 4px solid #f9c513;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 6px;
+  color: #57430d;
+}
+
+.spoiler {
+  background-color: #eaecef;
+  border: 1px solid #d0d7de;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 6px;
+}
+
+.spoiler summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #0366d6;
+  outline: none;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.spoiler summary:hover {
+  color: #0056b3;
+}ы
+
+/*3.Анимация*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mermaid {
+  text-align: center;
+  margin: 20px 0;
+}
